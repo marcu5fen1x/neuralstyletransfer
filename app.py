@@ -33,6 +33,10 @@ STYLE_LAYERS = [
     ('conv4_1', 0.2),
     ('conv5_1', 0.2)]
 
+@app.route('/isAlive', methods=['POST', 'GET'])
+def index():
+    return "true"
+
 def compute_content_cost(a_C, a_G):
     """
     Computes the content cost
